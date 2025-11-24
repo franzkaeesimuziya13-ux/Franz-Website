@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="BIT315 portfolio - login" />
+  <title>Login - Franz Simuziya</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Portfolio Login</h1>
+  </header>
+
+  <main class="container">
+    <form id="loginForm" class="card" onsubmit="return handleLogin(event)">
+      <h2>Sign in</h2>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter username" />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" />
+
+      <label class="checkbox-inline">
+        <input type="checkbox" id="remember" /> Remember Me
+      </label>
+
+      <button type="submit" class="btn">Login</button>
+      <p id="loginError" class="error" aria-live="polite"></p>
+      <p class="small"> username >=4 chars and password >=6 chars will proceed.</p>
+    </form>
+  </main>
+
+  <footer class="site-footer">&copy; 2025 Franz Simuziya</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

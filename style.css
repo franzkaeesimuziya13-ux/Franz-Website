@@ -1,0 +1,49 @@
+:root{
+  --accent:#2b7a78;
+  --muted:#f4f4f4;
+  --text:#222;
+}
+
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;color:var(--text);background:#fafafa}
+.site-header{background:var(--accent);color:#fff;padding:12px 20px}
+.site-header h1{margin:0;font-size:1.2rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:12px;align-items:center}
+.main-nav a{color:#fff;text-decoration:none}
+.container{max-width:1000px;margin:20px auto;padding:0 12px}
+.card{background:#fff;padding:16px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.08)}
+.btn{display:inline-block;padding:8px 12px;background:var(--accent);color:#fff;text-decoration:none;border-radius:4px}
+.error{color:#c0392b}
+input[type=text],input[type=password]{width:100%;padding:8px;margin:6px 0;border:1px solid #ddd;border-radius:4px}
+.checkbox-inline{display:block;margin:8px 0}
+.site-footer{text-align:center;padding:12px;margin-top:20px;color:#666}
+.two-column{display:grid;grid-template-columns:320px 1fr;gap:16px}
+.profile{display:flex;gap:12px;align-items:center}
+.profile-pic{width:96px;height:96px;border-radius:8px;object-fit:cover}
+.slideshow-container{position:relative;overflow:hidden}
+.slide{width:100%;display:none;object-fit:cover}
+.prev,.next{position:absolute;top:45%;transform:translateY(-50%);background:rgba(0,0,0,0.45);color:#fff;border:none;padding:8px;border-radius:4px;cursor:pointer}
+.prev{left:8px}
+.next{right:8px}
+.dots{text-align:center;margin-top:8px}
+.dots button{border:none;background:#ddd;width:12px;height:12px;border-radius:50%;margin:4px;cursor:pointer}
+.results-table{width:100%;border-collapse:collapse;margin-top:12px}
+.results-table th, .results-table td{padding:8px;border:1px solid #ddd}
+.results-table tbody tr:nth-child(odd){background:#f9f9f9}
+.results-table tbody tr:hover{background:#eef}
+@media(max-width:800px){
+  .two-column{grid-template-columns:1fr}
+  .main-nav ul{flex-direction:column;background:transparent}
+  .header-inner{flex-direction:column;gap:8px}
+}
+
+/* Dropdown nav */
+.main-nav li{position:relative;color:#fff;padding:8px}
+.main-nav .dropdown{position:absolute;left:0;top:100%;background:var(--accent);display:none;min-width:160px;border-radius:4px;padding:8px}
+.main-nav li:hover>.dropdown, .main-nav li:focus-within>.dropdown{display:block}
+.main-nav .dropdown a{display:block;padding:6px;color:#fff}
+
+/* Utilities */
+.small{font-size:0.9rem;color:#666}
+.checkbox-inline input{margin-right:6px}

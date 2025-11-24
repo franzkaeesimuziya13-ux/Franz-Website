@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Home - Portfolio" />
+  <title>Home - Franz Simuziya</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>Franz Simuziya</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li class="has-dropdown" tabindex="0">Academic Results
+            <ul class="dropdown" aria-label="Academic results submenu">
+              <li><a href="year1-2023.html">Year 1 Results</a></li>
+              <li><a href="year2-2024.html">Year 2 Results</a></li>
+              <li><a href="year3-2025.html">Year 3 Results</a></li>
+              <li><a href="year4-2026.html">Year 4 Results</a></li>
+            </ul>
+          </li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="page1.html">Extra Page 1</a></li>
+          <li><a href="page2.html">Extra Page 2</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container two-column">
+    <aside class="slideshow card" aria-label="Image slideshow">
+      <div id="slideshow" class="slideshow-container">
+        <img src="photo1.GIF" class="slide" alt="Slideshow image 1 (replace slideshow1.jpg)" />
+        <img src="photo2.GIF" class="slide" alt="Slideshow image 2 (replace slideshow2.jpg)" />
+        <img src="photo3.GIF" class="slide" alt="Slideshow image 3 (replace slideshow3.jpg)" />
+        <img src="photo4.jpg" class="slide" alt="Slideshow image 4 (replace slideshow4.jpg)" />
+        <img src="photo5.GIF" class="slide" alt="Slideshow image 5 (replace slideshow5.jpg)" />
+        <img src="photo6.PNG" class="slide" alt="Slideshow image 5 (replace slideshow5.jpg)" />
+        <button class="prev" aria-label="Previous slide" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" aria-label="Next slide" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+      <div id="dots" class="dots" aria-hidden="false"></div>
+    </aside>
+
+    <section class="content card">
+      <div class="profile">
+        <img src="franz.jpg" alt="Profile picture (replace profile.jpg)" class="profile-pic" />
+        <div>
+          <h2>Franz Simuziya</h2>
+          <p class="bio">I hold a Certificate in Electrical Engineering and a Diploma in Computer Science and Information Management, 
+                         complemented by multiple professional certifications including CCNP, HCIA-Security, and Lean Six Sigma. 
+                         I am currently in my third year pursuing a Bachelor of Science in Information Systems and Technology. 
+                         As an automation enthusiast, I am passionate about integrating technology, networking, 
+                         and systems to create efficient, reliable, and innovative solutions.</p>
+        </div>
+      </div>
+
+      <div class="welcome">
+        <h3>Welcome!</h3>
+        <p id="datetime">Loading date & time...</p>
+      </div>
+
+      <div class="video-wrapper">
+        <h3>Instructional Video</h3>
+       
+        <video controls width="100%" src="instruction.mp4">Your browser does not support the video tag.</video>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">&copy; 2025 Franz Simuziya</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
